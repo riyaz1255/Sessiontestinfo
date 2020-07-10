@@ -1,0 +1,95 @@
+{
+	"info": {
+		"_postman_id": "fb79ea95-fe88-4297-a5af-e15fb35b00af",
+		"name": "SessionTestInfo",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createTestSessionInfo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"testDate\": \"2020-07-10\",\n\t\t\"startTime\": \"16:30\",\n\t\t\"endTime\": \"18:30\",\n\t\t\"test\":\n\t\t\t\n\t\t\t{\n\t\t\t\t\"test\": \"Test 01\",\n\t\t\t\t\"classRooms\": [\n\t\t\t\t\t{\n\t\t\t\t\t    \"className\" :\"class1\",\n\t\t\t\t\t\t\"student\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t \"className\" :\"class2\",\n\t\t\t\t\t\t\"student\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t \"className\" :\"class3\",\n\t\t\t\t\t\t\"student\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t\t,\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t},\n\t\t\t\t\t{\n\t\t\t\t\t \"className\" :\"class4\",\n\t\t\t\t\t\t\"student\": [\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"John Doe\",\n\t\t\t\t\t\t\t\t\"registration\": \"1234\"\n\t\t\t\t\t\t\t},\n\t\t\t\t\t\t\t{\n\t\t\t\t\t\t\t\t\"name\": \"Miranda Navelle\",\n\t\t\t\t\t\t\t\t\"registration\": \"232AD\"\n\t\t\t\t\t\t\t}\n\t\t\t\t\t\t]\n\t\t\t\t\t}\n\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t]\n\t\t\t\t\n\t\t\t\t\n\t\t\t}\n\t\t\n\t}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/session/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"session",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getSessionInfo",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\t\"testDate\": \"2020-07-10\",\n\t\t\"startTime\": \"15:30\"\n\t\t\t\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:7001/session/getSessionInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"session",
+						"getSessionInfo"
+					]
+				},
+				"description": "provide start time in 24 hr clock"
+			},
+			"response": []
+		},
+		{
+			"name": "getAllSessionTestInfo",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:7001/session/getAllSessionsInfo",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "7001",
+					"path": [
+						"session",
+						"getAllSessionsInfo"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
